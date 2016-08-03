@@ -13,9 +13,10 @@
 #                                                                  monty
 ################################################################################
 # Write your function below:
-# Body
 
-
+def right_justify(s):
+    space_needed=70-len(s)
+    print (' ' * space_needed + s)
 
 
 

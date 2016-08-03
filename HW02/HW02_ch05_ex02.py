@@ -19,14 +19,20 @@
 
 ################################################################################
 # Write your functions below:
-# Body
+def check_fermat(a, b, c, n):
+    if n>2 and a**n + b**n == c**n:
+        print( "Holy smokes, Fermat was wrong!")
+    else:
+        print( "No, that doesn't work.")
 
 
-
-
-
-
-
+def check_fermat_ints():
+    text = input("So you want to test Fermat's Theory? Please provide values for a,b,c,n (in that order, separated by commas, no spaces) to test the famous formula \n a^n + b^n = c^n \n")
+    a=int(text[0])
+    b=int(text[2])
+    c=int(text[4])
+    n=int(text[6])
+    check_fermat(a, b, c, n)
 
 
 # Write your functions above:
@@ -34,12 +40,12 @@
 def main():
     """Call your function within this function.
     When complete have one function call in this function:
-    check_fermat_ints(1,2,3,4)
+    check_fermat_ints()
     and two functions defined in the body:
     check_fermat_ints()
     check_fermat()
     """
-    print("Hello World!")
+    check_fermat_ints()
 
 
 
